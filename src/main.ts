@@ -4,7 +4,9 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-Vue.use(VueRx)
+const vueRx: any = VueRx
+Vue.use(vueRx.default)
+// Vue.use(VueRx)
 
 new Vue({
   render: h => h(App)
